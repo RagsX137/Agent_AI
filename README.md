@@ -55,11 +55,6 @@ Current limitations
 ## Improvements on the way
 - Modularization of prompts, model names and tasks.
 - Expansion of capabilities. Currently only 2 agents and 2 tasks
-- 
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Citation
 

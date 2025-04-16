@@ -1,7 +1,4 @@
 # Ignore environment files containing secrets
 .env
-# .env.local
-# config/secrets.yml
-# credentials.json
 basic_chatbot.ipynb
 agentic_AI_prototype.py

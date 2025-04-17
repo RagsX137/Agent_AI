@@ -3,3 +3,5 @@
 basic_chatbot.ipynb
 agentic_AI_prototype.py
 IMPORTANT.txt
+__pycache__
+venv

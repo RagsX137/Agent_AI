@@ -2,6 +2,8 @@
 
 An experimental agentic AI system designed to autonomously solve complex tasks through reasoning, planning, and execution.
 
+Note this only works on Python 3.11 at the moment.
+
 ## Overview
 
 Agent_AI is a prototype framework that enables AI models to operate as autonomous agents capable of:

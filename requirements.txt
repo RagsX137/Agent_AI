@@ -1,8 +1,8 @@
+crewai
+crewai[tools]
+python-dotenv
 langchain
 wikipedia
 langchain-ollama
-crewai
-crewai[tools]
 pydantic
-python-dotenv
 langgraph

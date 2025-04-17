@@ -3,16 +3,14 @@ from crewai import Agent, LLM
 from crewai import Task
 from crewai_tools import SerperDevTool
 import os
-
-os.environ["SERPER_API_KEY"] = "e6e60312c2a22c6f6cf5871b7e3cb6a81cba200d"
 ## Tools
 search = SerperDevTool()
 
 # Create First Agent
 researcher = Agent(
     # llm=llm,
-    llm= LLM(model="ollama/gemma3:4b", base_url="http://localhost:11434"),
-    function_calling_llm=LLM(model="ollama/llama3.2:latest", base_url="http://localhost:11434"),
+    llm= LLM(model="ollama/deepseek-r1:1.5b", base_url="http://localhost:11434"),
+    function_calling_llm=LLM(model="ollama/gemma3:4b", base_url="http://localhost:11434"),
     role="Senior AI Researcher",
     goal="Find promising research in the field of Quantum Computing.",
     backstory="You are a veteran quantum computing researcher with background in modern physics",
@@ -26,7 +24,7 @@ researcher = Agent(
 # Create Second Agent
 writer = Agent(
     # llm=llm,
-    llm= LLM(model="ollama/deepseek-r1:7b", base_url="http://localhost:11434"),
+    llm= LLM(model="ollama/llama3.2:3b", base_url="http://localhost:11434"),
     role="Senior Speech Writer.",
     goal="Write engaging and witty keynote speeched from the provided research",
     backstory="You are a veteran quantum computing writer with background in modern physics",
